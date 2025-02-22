@@ -4,8 +4,6 @@ date: 2024-02-22
 tags: [notes, creativity, customization]
 ---
 
-# Fun With Notes
-
 Let's talk about the actually fun part of all this - making it your own and doing cool stuff with your notes.
 
 ## Why This Is Actually Awesome

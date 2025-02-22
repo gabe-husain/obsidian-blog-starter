@@ -4,8 +4,6 @@ date: 2024-02-22
 tags: [meta, about, site]
 ---
 
-# About This Site
-
 Yo, welcome to my little corner of the internet. This site is built using a stack I've put together to turn [[Obsidian]] vaults into actual websites that people can browse through. Why? Because I think more people should be sharing their thoughts online, and the barriers to doing that should be lower.
 
 ## What's Going On Here?
