@@ -26,7 +26,7 @@ For the nerds in the back:
 - Tailwind because writing CSS by hand is for masochists
 - Some custom parsing to handle Obsidian-style links
 
-Check out the [GitHub repo](https://github.com/yourusername/obsidian-blog-starter) if you want to see how it all works or use it yourself.
+Check out the [GitHub repo](https://github.com/gabe-husain/obsidian-blog-starter) if you want to see how it all works or use it yourself.
 
 ## Getting Started
 
