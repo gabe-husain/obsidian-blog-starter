@@ -21,7 +21,7 @@ Made with Claude 3.5 Sonnet and Trae because why reinvent the wheel when you can
 
 1. Grab the code:
 ```bash
-git clone https://github.com/yourusername/obsidian-blog-starter.git
+git clone https://github.com/gabe-husain/obsidian-blog-starter
 cd obsidian-blog-starter
 ```
 
