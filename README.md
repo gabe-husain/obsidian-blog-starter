@@ -1,5 +1,21 @@
 # Obsidian Blog Starter
 
+> [!important]
+> The fastest way to get started is by running the setup script:
+> ```bash
+> ./setup.sh
+> ```
+> Before running the script:
+> - Make sure you have Node.js 18.17+ and Git installed
+> - Clone this repository and navigate to its directory
+> - Make the script executable with `chmod +x setup.sh`
+>
+> After running the script:
+> - Your `.env` file will be configured with your settings
+> - Dependencies will be installed automatically
+> - A `content` directory will be created for your markdown files
+> - You'll be ready to start the development server with `npm run dev` or `yarn dev`
+
 Yo, this is a quick way to turn your Obsidian vault into a sick website using Next.js. Built this because I wanted my notes to be shareable and I figure you might too.
 
 Made with Claude 3.5 Sonnet and Trae because why reinvent the wheel when you can build on top of it?
