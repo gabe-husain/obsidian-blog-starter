@@ -9,8 +9,8 @@ export default async function Home() {
         <div className="mb-12">
           <h1 className="text-3xl font-bold mb-4">🧠 My External Brain</h1>
           <p className="text-black/70 dark:text-white/70">
-            This is my personal wiki/knowledge base built using Next.js and organized 
-            following Zettelkasten principles. It's messy, it's evolving, and that's exactly how it should be.
+            {"This is my personal wiki/knowledge base built using Next.js and organized " +
+            "following Zettelkasten principles. It's messy, it's evolving, and that's exactly how it should be."}
           </p>
         </div>
 
