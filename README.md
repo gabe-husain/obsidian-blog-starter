@@ -4,6 +4,15 @@ Yo, this is a quick way to turn your Obsidian vault into a sick website using Ne
 
 Made with Claude 3.5 Sonnet and Trae because why reinvent the wheel when you can build on top of it?
 
+## Prerequisites
+
+Before you start, make sure you have:
+- Node.js 18.17 or later installed
+- Git (for cloning the repo)
+- A GitHub account (for deployment)
+- Basic familiarity with Markdown
+- [Optional] An Obsidian vault you want to turn into a website
+
 ## What's in the box
 
 - Next.js + TypeScript because we're not savages
@@ -32,14 +41,28 @@ npm install
 yarn install
 ```
 
-3. Fire it up:
+3. Set up your environment:
+- Copy the example environment file to create your own:
+```bash
+cp .env.example .env
+```
+- Open `.env` in your favorite editor and customize the values:
+  - `NEXT_PUBLIC_SITE_URL`: Your site's URL (use http://localhost:3000 for local development)
+  - `NEXT_PUBLIC_SITE_NAME`: Your site's name
+  - `NEXT_PUBLIC_SITE_DESCRIPTION`: A brief description of your site
+  - Optional: Configure Google Analytics and social media handles if desired
+
+4. Fire it up:
 ```bash
 npm run dev
 # or
 yarn dev
 ```
 
-4. Check it out at [http://localhost:3000](http://localhost:3000)
+5. Check it out at [http://localhost:3000](http://localhost:3000)
+
+> [!note]
+> The `.env` file is ignored by git (listed in .gitignore) to keep your settings private. Always make sure to set up your environment variables when deploying or working on a new machine.
 
 ## Adding Your Stuff
 
@@ -71,7 +94,33 @@ Here's where everything lives:
 
 ## Deployment
 
-Just push it to GitHub and hook it up to Vercel. It's actually that simple.
+1. Push your code to GitHub
+2. Sign up for [Vercel](https://vercel.com) if you haven't already
+3. Connect your GitHub repo to Vercel
+4. Add your environment variables in Vercel:
+   - Go to Project Settings > Environment Variables
+   - Add the same variables from your `.env` file
+5. Deploy! Vercel will automatically build and deploy your site
+
+> [!tip]
+> Enable automatic deployments so your site updates whenever you push changes to GitHub.
+
+## Troubleshooting
+
+Common issues and solutions:
+
+1. **Build fails on Vercel**
+   - Make sure all environment variables are set correctly
+   - Check if you're using Node.js 18.17 or later
+
+2. **Links not working**
+   - Ensure your markdown files are in the `content/` directory
+   - Check that internal links use the `[[wiki-style]]` format
+   - File names should match the links (case-sensitive)
+
+3. **Images not showing**
+   - Place images in the `public/` directory
+   - Reference them in markdown as `/image-name.jpg`
 
 ## Help Out
 
