@@ -1,14 +1,18 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export function MDContent({ content }: { content: string }) {
   const containerRef = useRef<HTMLDivElement>(null)
+  const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
-    // Add any client-side enhancements here
-    // For example, syntax highlighting, copy buttons, etc.
-  }, [content])
+    setIsClient(true)
+  }, [])
+
+  if (!isClient) {
+    return <div className="markdown-content" />
+  }
 
   return (
     <div

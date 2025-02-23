@@ -4,8 +4,7 @@ export default async function Home() {
   const posts = await getAllPosts();
 
   return (
-    <div className="min-h-screen p-4 md:p-8 lg:p-12 font-mono">
-      <main className="max-w-3xl mx-auto">
+    <main className="max-w-3xl mx-auto pt-12">
         <div className="mb-12">
           <h1 className="text-3xl font-bold mb-4">🧠 My External Brain</h1>
           <p className="text-black/70 dark:text-white/70">
@@ -44,7 +43,6 @@ export default async function Home() {
             </article>
           ))}
         </div>
-      </main>
-    </div>
+    </main>
   );
 }
